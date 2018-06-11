@@ -1,0 +1,63 @@
+<!-- Student: Bofelo Lloyd Headbush - 13102932 -->
+<!-- Final Year Type 4 Project: Remittance Inclusive Worldwide Money Transfers -->
+<!-- BBK 2018 -->
+
+<?php
+	if(isset($_POST['submit'])) {
+		unset($_SESSION['uid']);
+		session_destroy();
+		
+		header("Location: index.php?page=home");
+        exit();
+	}
+?>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+    <head>
+        <link rel="stylesheet" href="css/style.css"/>
+    	<meta charset="utf-8"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		
+		<!--[if lt IE 9]>
+			<script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv.min.js"></script>
+			<link href="css/ie.css" rel="stylesheet" type="text/css"/>
+		<![endif]-->
+		
+    	<title>[+page_title+]</title>
+    </head>
+    <body>
+		<div class="" id="container">
+		
+			<header id="pageheader" class="d0 b-border" role="banner">
+				<div id="logo">
+					<h1>Frontier</h1>
+				</div>
+				<nav id="navigation" role="navigation">
+					<ul>
+						<li><a href="index.php?page=home">Home</a></li>
+						
+						<?php
+							if(isset($_SESSION['uid'])) {
+								echo '	<li><a href="index.php?page=dashboard">Dashboard</a></li>';
+							}
+						?>
+						
+						<li><a href="#">Support</a></li>
+						
+						<?php
+							if(isset($_SESSION['uid'])) {
+								echo '	<form action="" method="POST">
+											<li><button class="r-corners nav-btn btn btn-clr-red" type="submit" name="submit">Logout</button></li>
+										</form>';
+							} else {
+								echo '	<li><a class="r-corners nav-btn btn-clr-blue" href="index.php?page=sign_up">Sign up</a></li>
+										<li><a class="r-corners nav-btn btn-clr-red" href="index.php?page=login">Login</a></li>
+									';
+							}
+						?>
+			    	</ul>
+			    </nav>
+            </header>
+			<main id="content" role ="main">
+  
