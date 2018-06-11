@@ -1,2 +1,2 @@
 # Frontier International Money Transfer
-Readme coming soon.
+Readme coming soon. Refactoring in process.
