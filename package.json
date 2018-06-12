@@ -1,0 +1,26 @@
+{
+  "name": "frontier-web-service",
+  "version": "1.0.0",
+  "description": "Readme coming soon. Refactoring in process.",
+  "main": "index.js",
+  "dependencies": {
+    "eslint": "^4.19.1"
+  },
+  "devDependencies": {
+    "eslint-config-airbnb-base": "^12.1.0",
+    "eslint-plugin-import": "^2.12.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ocanica/frontier-web-service.git"
+  },
+  "author": "Lloyd Headbush",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ocanica/frontier-web-service/issues"
+  },
+  "homepage": "https://github.com/ocanica/frontier-web-service#readme"
+}
