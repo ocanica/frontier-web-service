@@ -21,4 +21,4 @@ Latest version is available under the master branch in this repo.
  - Lloyd Headbush - https://github.com/ocanica
 
 ### License
-This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ocanica/frontier-web-service/master/LICENSE.md) file for full details.
+This project is licensed under the MIT License - see the [LICENSE.md](https://github.com/ocanica/frontier-web-service/blob/master/LICENSE) file for full details.
